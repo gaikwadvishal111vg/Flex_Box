@@ -1,0 +1,41 @@
+/* *{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+} */
+.demo{
+    background-color: black;
+    /* border: 5px solid red; */
+    /* width: 100%;
+    height: 200px; */
+    color: white;
+    text-align: center;
+    justify-content: space-between;
+align-items: center;
+text-transform: uppercase;
+padding: 30px;
+border-bottom: 5px solid yellow;
+}
+.Cat_Photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    padding: 10px 10px;
+   gap: 15px;
+    max-width: 30%;
+}
+.Cat_Photo img{
+    width:150px;
+    flex: 0 0 calc(50% -10px);
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+.Cat_Photo::after{
+    content: "";
+    width: 350px;
+}
